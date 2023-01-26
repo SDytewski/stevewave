@@ -12,8 +12,18 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { createTheme } from '@mui/material/styles';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#f56977'
+    }
+  }
+});
+
+const pages = ['Bio', 'Songs', 'Shows', 'Video'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
@@ -36,8 +46,9 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" theme={theme}>
       <Container maxWidth="xl">
+      <createTheme>
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
@@ -55,7 +66,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -111,7 +122,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -126,11 +137,7 @@ function NavBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
+           
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
@@ -155,6 +162,7 @@ function NavBar() {
             </Menu>
           </Box>
         </Toolbar>
+        </createTheme>
       </Container>
     </AppBar>
   );
