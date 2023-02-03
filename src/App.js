@@ -5,7 +5,7 @@ import Body from './components/Body.js'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <NavBar/>
       <Body/>
       <Footer/>
