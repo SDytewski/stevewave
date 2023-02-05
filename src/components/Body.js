@@ -3,9 +3,8 @@ import styled from "@mui/material/styles/styled";
 import { Grid, Typography, Button, Box, keyframes } from '@mui/material';
 // import myteam from '../images/myteam.jpg';
 import { createTheme } from '@mui/material/styles';
-import backgroundsand from '../images/backgroundsand.jpg';
+import backgroundsand from '../images/27230.jpg';
 import { useEffect, useState } from "react";
-
 
 
 const textShadowPopBr = keyframes`
@@ -38,8 +37,8 @@ const rollInLeft = keyframes`
 
 const Holder = styled(Box)(({ roll }) => ({
   width: "800px",
-  height: "300px",
-  background: "#00adb5",
+  height: "100px",
+ 
   borderRadius: "10px",
   display: "flex",
   justifyContent: "center",
@@ -49,7 +48,7 @@ const Holder = styled(Box)(({ roll }) => ({
 }));
 
 const Title = styled(Typography)(() => ({
-  color: "#eee",
+  color: "#E7626A",
 
   "&:hover": {
     animation: `${textShadowPopBr} 0.6s both`
@@ -61,13 +60,15 @@ const Title = styled(Typography)(() => ({
 
 const styles = {
     heroContainer: {
-      height: 400,
+      height: 500,
     
       backgroundImage: `url(${backgroundsand})`,
      
       backgroundSize: 'cover',
     
-    }
+    },
+
+
    };
 
 
@@ -82,7 +83,6 @@ const theme = createTheme({
             main: '#0000'
         },
     }
-
 })
 
 
@@ -107,7 +107,8 @@ const Body = () => {
             direction="column"
             alignItems="center"
             justifyContent="center"
-            style={styles.heroContainer}
+            style={styles.heroContainer} 
+            
             
           >
       <Holder roll={roll} >
