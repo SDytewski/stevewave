@@ -8,7 +8,7 @@ const theme = createTheme({
   // Override or create new styles, colors, palettes...
   palette: {
     primary: {
-      main: "#2a9461"
+      main: "#FF8886"
     }
   }
 });

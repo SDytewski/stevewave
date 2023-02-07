@@ -130,12 +130,8 @@ const Body = () => {
                 New Single
             </Typography>
                     
-            <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp"  variant="outlined" color="primary">I WANT HER</Button>
-            <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
-                
-                "I want her"
-              
-            </Typography>
+            <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp"  variant="contained" color="primary">I WANT HER</Button>
+            
          
     
          
