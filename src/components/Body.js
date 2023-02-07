@@ -1,10 +1,16 @@
 import React from 'react';
+import '../App.css';
 import styled from "@mui/material/styles/styled";
+import { createMuiTheme, ThemeProvider } from "@mui/material/styles";
+
 import { Grid, Typography, Button, Box, keyframes } from '@mui/material';
 // import myteam from '../images/myteam.jpg';
 import { createTheme } from '@mui/material/styles';
 import backgroundsand from '../images/27230.jpg';
 import { useEffect, useState } from "react";
+
+
+
 
 
 const textShadowPopBr = keyframes`
@@ -48,7 +54,7 @@ const Holder = styled(Box)(({ roll }) => ({
 }));
 
 const Title = styled(Typography)(() => ({
-  color: "#E7626A",
+  color: "#FF8886",
 
   "&:hover": {
     animation: `${textShadowPopBr} 0.6s both`
@@ -72,18 +78,17 @@ const styles = {
    };
 
 
-
-const theme = createTheme({
-
+   const theme = createTheme({
     palette: {
-        primary: {
-            main: '#f56977'
-        },
-        secondary: {
-            main: '#0000'
-        },
-    }
-})
+       primary: {
+          main: "#ff8f00" // This is an orange looking color
+                 },
+       secondary: {
+          main: "#ffcc80" //Another orange-ish color
+                  },
+                }
+         
+});
 
 
 const Body = () => {
@@ -101,6 +106,8 @@ const Body = () => {
 
 
     return (
+        
+        
         <Grid
             container
             spacing={0}
@@ -108,7 +115,7 @@ const Body = () => {
             alignItems="center"
             justifyContent="center"
             style={styles.heroContainer} 
-            
+        
             
           >
       <Holder roll={roll} >
@@ -123,9 +130,7 @@ const Body = () => {
                 New Single
             </Typography>
                     
-        <button size="large" variant="contained" color="primary">
-            Listen
-        </button>
+            <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp"  variant="outlined" color="primary">I WANT HER</Button>
             <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
                 
                 "I want her"
@@ -136,7 +141,7 @@ const Body = () => {
          
         </Grid>
 
-        
+     
     );
 };
 
