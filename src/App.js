@@ -27,7 +27,7 @@ const theme = createTheme({
     ].join(','),
   },
 
-  spacing: 8
+  spacing: 2
 
 });
 

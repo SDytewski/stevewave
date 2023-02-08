@@ -122,8 +122,8 @@ const Body = () => {
             style={styles.heroContainer} 
 
           >
-        <Grid item  xs={12} align="center">
-           <Holder roll={roll} sx={{ m: 5 }} >
+        <Grid item  xs={12} align="center"  sx={{mt: 40}}>
+           <Holder roll={roll}  >
               <Title variant="h1">STEVE WAVE</Title>
            </Holder>
         </Grid>    
@@ -131,13 +131,15 @@ const Body = () => {
         <Grid item  xs={12}>      
            
            <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
-                Award Winning Spotify Artist
+              <div className="glow">
+               The New Single
                 "I want her"
-                New Single
+                IS NOW ON SPOTIFY
+                </div>
             </Typography>        
         </Grid>  
 
-        <Grid item xs={12} align="center">       
+        <Grid item xs={12} align="center" sx={{mt: 0}}>       
             <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp"  variant="contained" color="primary" sx={{ m: 2 }} xs={12}>I WANT HER</Button>
         </Grid>    
          
