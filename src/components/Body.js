@@ -10,6 +10,11 @@ import backgroundsand from '../images/27230.jpg';
 import { useEffect, useState } from "react";
 
 
+const classes = {
+    root: {
+      flexGrow: 1
+    },
+}
 
 
 
@@ -107,36 +112,37 @@ const Body = () => {
 
     return (
         
-        
-        <Grid
+    <div style={classes.root}>
+       <Grid
             container
             spacing={0}
-            direction="column"
-            alignItems="center"
-            justifyContent="center"
+            // direction="column"
+            // alignItems="center"
+            // justifyContent="center"
             style={styles.heroContainer} 
-        
-            
+
           >
-      <Holder roll={roll} >
-        <Title variant="h1">STEVE WAVE</Title>
-      </Holder>
-          
-                 
+        <Grid item  xs={12} align="center">
+           <Holder roll={roll} sx={{ m: 5 }} >
+              <Title variant="h1">STEVE WAVE</Title>
+           </Holder>
+        </Grid>    
+       
+        <Grid item  xs={12}>      
            
-            <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
+           <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
                 Award Winning Spotify Artist
                 "I want her"
                 New Single
-            </Typography>
-                    
-            <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp"  variant="contained" color="primary">I WANT HER</Button>
-            
-         
-    
+            </Typography>        
+        </Grid>  
+
+        <Grid item xs={12} align="center">       
+            <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp"  variant="contained" color="primary" sx={{ m: 2 }} xs={12}>I WANT HER</Button>
+        </Grid>    
          
         </Grid>
-
+        </div>
      
     );
 };

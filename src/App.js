@@ -10,14 +10,32 @@ const theme = createTheme({
     primary: {
       main: "#FF8886"
     }
-  }
+  },
+
+  typography: {
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
+
+  spacing: 8
+
 });
 
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-    // MUI components
+   
  
     <div className="app">
       <NavBar/>
