@@ -96,7 +96,7 @@ const styles = {
 });
 
 
-const Body = () => {
+export const Home = () => {
 
 
     const [roll, setRoll] = useState(false);
@@ -148,8 +148,4 @@ const Body = () => {
      
     );
 };
-
-
-
-export default Body;
 

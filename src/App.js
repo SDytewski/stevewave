@@ -1,8 +1,11 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import NavBar from './components/NavBar.js';
 import Footer from './components/Footer.js'
-import Body from './components/Body.js'
+import { Home } from './components/Home.js'
+import { Contact } from './components/Contact.js'
+import { Songs } from './components/Songs.js'
 
 const theme = createTheme({
   // Override or create new styles, colors, palettes...
@@ -35,12 +38,24 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-   
+      
  
     <div className="app">
-      <NavBar/>
+
+    <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/songs" element={<Songs />} />
+          <Route path="/contact" element={<Contact/>} />
+        </Routes>
+
+      </Router>
+   
+
+
+      {/* <NavBar/>
       <Body/>
-      <Footer/>
+      <Footer/> */}
     </div>
     </ThemeProvider>
   );
