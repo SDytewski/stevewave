@@ -43,12 +43,13 @@ function App() {
     <div className="app">
 
     <Router>
+      <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/songs" element={<Songs />} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
-
+      <Footer />
       </Router>
    
 

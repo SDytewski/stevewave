@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { createTheme } from '@mui/material/styles';
+import {Link} from "react-router-dom"
 
 
 const theme = createTheme({
@@ -27,7 +28,7 @@ const theme = createTheme({
   }
 });
 
-const pages = ['Bio', 'Songs', 'Shows', 'Video'];
+const pages = [{ title: 'Home',  href:' '}, {title: 'Songs',  href: 'Songs'},{ title: "Contact", href: 'Contact'}];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
@@ -103,8 +104,11 @@ function NavBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.href} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                  <Link  style={{textDecoration: "none", color:"white"}} to={`/${page.href}`}>{page.title}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -131,11 +135,12 @@ function NavBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.href}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+               <Link  style={{textDecoration: "none", color:"white"}} to={`/${page.href}`}>{page.title}
+                    </Link>
               </Button>
             ))}
           </Box>
