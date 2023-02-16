@@ -1,11 +1,12 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import NavBar from './components/NavBar.js';
 import Footer from './components/Footer.js'
 import { Home } from './components/Home.js'
 import { Contact } from './components/Contact.js'
 import { Songs } from './components/Songs.js'
+import { useState } from 'react';
 
 const theme = createTheme({
   // Override or create new styles, colors, palettes...
@@ -36,28 +37,46 @@ const theme = createTheme({
 
 
 function App() {
+  const [page, setPage] = useState('Home')
+
+  function displayPage() {
+    if (page === "Home") {
+
+      return (
+        <Home />
+      )
+    } else if (page === 'Songs') {
+      return (
+        <Songs />
+      )
+    } else {
+      return <Contact />
+    }
+  }
+
   return (
     <ThemeProvider theme={theme}>
-      
- 
-    <div className="app">
 
-    <Router>
-      <NavBar />
-        <Routes>
+
+      <div className="app">
+
+        {/* <Router> */}
+        <NavBar page={page} setPage={setPage} />
+        {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/songs" element={<Songs />} />
           <Route path="/contact" element={<Contact/>} />
-        </Routes>
-      <Footer />
-      </Router>
-   
+        </Routes> */}
+        {displayPage()}
+        <Footer />
+        {/* </Router> */}
 
 
-      {/* <NavBar/>
+
+        {/* <NavBar/>
       <Body/>
       <Footer/> */}
-    </div>
+      </div>
     </ThemeProvider>
   );
 }
