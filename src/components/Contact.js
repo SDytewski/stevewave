@@ -1,7 +1,92 @@
+import React from 'react';
+import '../App.css';
+import styled from "@mui/material/styles/styled";
+import { createMuiTheme, ThemeProvider } from "@mui/material/styles";
+
+import { Grid, Typography, Button, Box, keyframes } from '@mui/material';
+// import myteam from '../images/myteam.jpg';
+import { createTheme } from '@mui/material/styles';
+
+import { useEffect, useState } from "react";
+
+import backgroundmic2 from '../images/speaker.jpg';
+
+const classes = {
+    root: {
+      flexGrow: 1
+    },
+}
+
+
+
+
+
+const styles = {
+    heroContainer: {
+      height: 500,
+    
+      backgroundImage: `url(${backgroundmic2})`,
+     
+      backgroundSize: 'cover',
+    
+    },
+
+
+   };
+
+
+   const theme = createTheme({
+    palette: {
+       primary: {
+          main: "#ff8f00" // This is an orange looking color
+                 },
+       secondary: {
+          main: "#ffcc80" //Another orange-ish color
+                  },
+                }
+         
+});
+
 
 export const Contact = () => {
-return (
-<div className="container">
+
+
+    const [roll, setRoll] = useState(false);
+
+    useEffect(() => {
+      setTimeout(() => {
+        // animation
+        setRoll(true);
+      }, 500);
+    }, []);
+
+
+
+    return (
+        
+    <div style={classes.root}>
+       <Grid
+            container
+            spacing={0}
+            // direction="column"
+            // alignItems="center"
+            // justifyContent="center"
+            style={styles.heroContainer} 
+
+          >
+     
+       
+        <Grid item  xs={12}>      
+           
+           <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
+              <div className="glow">
+               CONTACT
+                </div>
+            </Typography>        
+        </Grid>  
+
+
+        <div className="container">
 <h1>FormSubmit Demo</h1>
 <form target="_blank" action="https://formsubmit.co/dy2ski@gmail.com" method="POST">
     <div className="form-group">
@@ -21,4 +106,14 @@ return (
 </form>
 </div>
 )
-}
+     
+        </Grid>
+        </div>
+     
+    );
+};
+
+
+
+
+
