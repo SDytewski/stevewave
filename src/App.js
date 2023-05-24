@@ -3,7 +3,7 @@ import './App.css';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import NavBar from './components/NavBar.js';
 import Footer from './components/Footer.js'
-import { Home } from './components/Home.js'
+import  Home  from './components/Home.js'
 import { Contact } from './components/Contact.js'
 import { Songs } from './components/Songs.js'
 import { useState } from 'react';
@@ -16,12 +16,15 @@ const theme = createTheme({
     }
   },
 
+  
+
   typography: {
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',
       '"Segoe UI"',
       'Roboto',
+      'Tilt Neon',
       '"Helvetica Neue"',
       'Arial',
       'sans-serif',

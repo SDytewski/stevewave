@@ -1,11 +1,10 @@
-import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme } from '@mui/material/styles';
-import  { useState } from 'react';
+import  { useState, useEffect } from 'react';
 
 
 
@@ -61,9 +60,24 @@ import  { useState } from 'react';
 
 
 
-function Example() {
+function Footer() {
   // Declare a new state variable, which we'll call "count"
   const [count, setCount] = useState(0);
+
+    useEffect(()=>{
+      document.title = `You clicked ${count} times`;
+    })
+
+
+//     const obj = {
+//         name: "Vinnie",
+//         id: 1, 
+//         food: 'pizza', 
+//         dob: '10/1/84'
+//     }
+
+// const { name, id } = obj
+
 
   return (
     <div>
@@ -74,7 +88,7 @@ function Example() {
   );
 }
 
-export default Example;
+export default Footer;
 
 //     );
 // }

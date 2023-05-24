@@ -11,10 +11,12 @@ import { useEffect, useState } from "react";
 
 
 const classes = {
-    root: {
-      flexGrow: 1
-    },
+  root: {
+    flexGrow: 1
+  },
 }
+
+// const font =  "'Tilt Neon', cursive";
 
 
 
@@ -49,7 +51,7 @@ const rollInLeft = keyframes`
 const Holder = styled(Box)(({ roll }) => ({
   width: "800px",
   height: "100px",
- 
+
   borderRadius: "10px",
   display: "flex",
   justifyContent: "center",
@@ -59,7 +61,10 @@ const Holder = styled(Box)(({ roll }) => ({
 }));
 
 const Title = styled(Typography)(() => ({
-  color: "#FF8886",
+  color: "#f781a3",
+  fontFamily:  "'Expletus Sans', cursive",
+  textshadow: "1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000",
+
 
   "&:hover": {
     animation: `${textShadowPopBr} 0.6s both`
@@ -70,82 +75,83 @@ const Title = styled(Typography)(() => ({
 
 
 const styles = {
-    heroContainer: {
-      height: 500,
-    
-      backgroundImage: `url(${backgroundsand})`,
-     
-      backgroundSize: 'cover',
-    
+  heroContainer: {
+    height: 500,
+
+    backgroundImage: `url(${backgroundsand})`,
+
+    backgroundSize: 'cover',
+
+  },
+
+
+};
+
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#ff8f00" // This is an orange looking color
     },
+    secondary: {
+      main: "#ffcc80" //Another orange-ish color
+    },
+  }
 
-
-   };
-
-
-   const theme = createTheme({
-    palette: {
-       primary: {
-          main: "#ff8f00" // This is an orange looking color
-                 },
-       secondary: {
-          main: "#ffcc80" //Another orange-ish color
-                  },
-                }
-         
 });
 
 
-export const Home = () => {
+function Home() {
 
 
-    const [roll, setRoll] = useState(false);
+  const [roll, setRoll] = useState(false);
 
-    useEffect(() => {
-      setTimeout(() => {
-        // animation
-        setRoll(true);
-      }, 500);
-    }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      // animation
+      setRoll(true);
+    }, 500);
+  }, []);
 
 
 
-    return (
-        
+  return (
+
     <div style={classes.root}>
-       <Grid
-            container
-            spacing={0}
-            // direction="column"
-            // alignItems="center"
-            // justifyContent="center"
-            style={styles.heroContainer} 
+      <Grid
+        container
+        spacing={0}
+        // direction="column"
+        // alignItems="center"
+        // justifyContent="center"
+        style={styles.heroContainer}
 
-          >
-        <Grid item  xs={12} align="center"  sx={{mt: 40}}>
-           <Holder roll={roll}  >
-              <Title variant="h1">STEVE WAVE</Title>
-           </Holder>
-        </Grid>    
-       
-        <Grid item  xs={12}>      
-           
-           <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
-              <div className="glow">
-               The New Single
-                "I want her"
-                IS NOW ON SPOTIFY
-                </div>
-            </Typography>        
-        </Grid>  
-
-        <Grid item xs={12} align="center" sx={{mt: 0}}>       
-            <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp"  variant="contained" color="primary" sx={{ m: 2 }} xs={12}>I WANT HER</Button>
-        </Grid>    
-         
+      >
+        <Grid item xs={12} align="center" sx={{ mt: 40 }} >
+          <Holder roll={roll}  >
+            <Title variant="h1">STEVE WAVE</Title>
+          </Holder>
         </Grid>
-        </div>
-     
-    );
+
+        <Grid item xs={12}>
+
+          <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
+            <div className="glow">
+              The New Single
+              "Babe Blade"
+              IS NOW ON SPOTIFY
+            </div>
+          </Typography>
+        </Grid>
+
+        <Grid item xs={12} align="center" sx={{ mt: 0 }}>
+          <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp" variant="contained" color="primary" sx={{ m: 2 }} xs={12}>I WANT HER</Button>
+        </Grid>
+
+      </Grid>
+    </div>
+
+  );
 };
 
+export default Home;
