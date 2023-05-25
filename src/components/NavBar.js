@@ -105,8 +105,8 @@ function NavBar({  setPage }) {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page.title} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page.title}
+                  <MenuItem key={page.title}  onClick={() => setPage(page.title)}>
+                    <Typography onClick={handleCloseNavMenu} textAlign="center">{page.title}
                       {/* <Link  style={{textDecoration: "none", color:"black"}} to={`/${page.href}`}>
                     </Link> */}
                     </Typography>

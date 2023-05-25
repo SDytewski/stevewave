@@ -50,10 +50,10 @@ const rollInLeft = keyframes`
 `;
 
 const Holder = styled(Box)(({ roll }) => ({
-  width: "800px",
-  height: "100px",
 
-  borderRadius: "10px",
+  // height: "100px",
+
+  // borderRadius: "10px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -132,8 +132,8 @@ function Home() {
         style={styles.heroContainer}
 
       >
-        <Grid item xs={12} align="center" sx={{ mt: 10, mb: 20 }} >
-          <Holder roll={roll}  >
+        <Grid item xs={6} align="center" sx={{ mt: 10, mb: 20 }} >
+          <Holder roll={roll}>
             <Title variant="h1">STEVE WAVE</Title>
           </Holder>
         </Grid>
