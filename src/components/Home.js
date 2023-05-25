@@ -132,13 +132,13 @@ function Home() {
         style={styles.heroContainer}
 
       >
-        <Grid item xs={6} align="center" sx={{ mt: 10, mb: 20 }} >
+        <Grid item xs={6} align="center" sx={{ mt: 10, mb: 10, ml: 20 }} >
           <Holder roll={roll}>
             <Title variant="h1">STEVE WAVE</Title>
           </Holder>
         </Grid>
 
-        <Grid item xs={12} align="center" sx={{ mt:30, mb:0 }}>
+        <Grid item xs={12} align="center" sx={{ mt:10, mb:0 }}>
 
           
          

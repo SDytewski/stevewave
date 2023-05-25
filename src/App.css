@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@1,600&display=swap');
 
 .glow {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   color: #fff;
   animation: glow 1s ease-in-out infinite alternate;
@@ -31,6 +31,6 @@ border: 0; width: 100%; height: 100px;
 }
 
 h1 {
-  text-shadow: -1px 0  #fd8e8e, 0 4px #fd8e8e, 4px 0 #fd8e8e, 0 -1px ;
+  text-shadow: -1px 0  #000000, 0 6px #000000, 6px 0 #000000, 0 -1px ;
 
 }
