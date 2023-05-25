@@ -89,18 +89,19 @@ export const Songs = () => {
             </Typography>        
         </Grid>  
             <Grid item xs={12} align="center">
+            <iframe src="https://open.spotify.com/embed/album/2IoHLWW6TmUp1QoJxyr7Gw?utm_source=generator"   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-            <iframe src="https://bandcamp.com/EmbeddedPlayer/track=3580342141/size=small/bgcol=ffffff/linkcol=f171a2/transparent=true/" seamless><a href="https://stevewave.bandcamp.com/track/babe-blade">Babe Blade by Steve Wave</a></iframe>
+            {/* <iframe src="https://bandcamp.com/EmbeddedPlayer/track=3580342141/size=small/bgcol=ffffff/linkcol=f171a2/transparent=true/" seamless><a href="https://stevewave.bandcamp.com/track/babe-blade">Babe Blade by Steve Wave</a></iframe> */}
             </Grid>
 
             <Grid item xs={12} align="center">
 
-            <iframe src="https://bandcamp.com/EmbeddedPlayer/track=2008273704/size=small/bgcol=ffffff/linkcol=f171a2/transparent=true/" seamless><a href="https://stevewave.bandcamp.com/track/in-love-with-a-ghost">In Love with a Ghost by Steve Wave</a></iframe>
+            <iframe src="https://open.spotify.com/embed/album/2e0Pcn6CSDmN7ss0YamLX7?utm_source=generator"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
            
             </Grid>
            
             <Grid item xs={12} align="center">
-            <iframe src="https://bandcamp.com/EmbeddedPlayer/track=269877715/size=small/bgcol=ffffff/linkcol=f171a2/transparent=true/" seamless><a href="https://stevewave.bandcamp.com/track/gypsy">Gypsy by Steve Wave</a></iframe>
+            <iframe src="https://open.spotify.com/embed/track/2hxhhr8YscoLlOfnd0Fepp?utm_source=generator"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </Grid>
         </Grid>
         </div>

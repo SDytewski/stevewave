@@ -13,7 +13,12 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#FF8886"
+    },
+    secondary: {
+    
+      main: "#f5f5f5"
     }
+    
   },
 
   

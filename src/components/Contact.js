@@ -88,7 +88,7 @@ export const Contact = () => {
         <Grid item  xs={12} align="center">  
 
         <div className="container">
-        <h1>FormSubmit Demo</h1>
+        
         <form target="_blank" action="https://formsubmit.co/dy2ski@gmail.com" method="POST">
             <div className="form-group">
                 <div className="form-row">

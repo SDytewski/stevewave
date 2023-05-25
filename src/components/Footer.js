@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+
+import { Grid } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import  { useState, useEffect } from 'react';
 
@@ -10,17 +12,17 @@ import  { useState, useEffect } from 'react';
 
 
 
-// const theme = createTheme({
-//     palette: {
-//         primary: {
-//             main: '#f56977'
-//         },
-//         secondary: {
-//             main: '#0000'
-//         }
+const theme = createTheme({
+    palette: {
+        primary: {
+            main:  "#ff8f00" 
+        },
+        secondary: {
+            main: "#ffcc80"
+        }
 
-//     }
-// });
+    }
+});
 
 // function Copyright() {
 //     return (
@@ -35,38 +37,25 @@ import  { useState, useEffect } from 'react';
 //     );
 // }
 
-// export default function Footer() {
-//     return (
+export default function Footer() {
+    return (
 
-//         <Box
-//             component="footer"
-//             sx={{
-//                 py: 3,
-//                 px: 2,
-//                 mt: 'auto',
-//                 backgroundColor: (theme) =>
-//                     theme.palette.mode === 'dark'
-//                         ? theme.palette.grey[200]
-//                         : theme.palette.grey[800],
-//             }}
-//         >
-//             <Container maxWidth="sm">
-//                 <Typography variant="body1" color="white">
-//                     Steve Wave
-//                 </Typography>
-//                              <Copyright />
-//             </Container>
-//         </Box>
+      <Grid item xs={12} align="center" sx={{ mt: 50, mb:10 }} >
+    
+      <div> Copyright Steve Wave 2023</div>
+  
+  </Grid>
+
+        )  }
 
 
+// function Footer() {
+//   // Declare a new state variable, which we'll call "count"
+//   const [count, setCount] = useState(0);
 
-function Footer() {
-  // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = useState(0);
-
-    useEffect(()=>{
-      document.title = `You clicked ${count} times`;
-    })
+    // useEffect(()=>{
+    //   document.title = `You clicked ${count} times`;
+//     })
 
 
 //     const obj = {
@@ -79,16 +68,16 @@ function Footer() {
 // const { name, id } = obj
 
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-      <button onClick={() => setCount(count - 1)}>Click me</button>
-    </div>
-  );
-}
+  // return (
+  //   <div>
+  //     <p>You clicked {count} times</p>
+  //     <button onClick={() => setCount(count + 1)}>Click me</button>
+  //     <button onClick={() => setCount(count - 1)}>Click me</button>
+  //   </div>
+  // );
+// }
 
-export default Footer;
+// export default Footer;
 
 //     );
 // }

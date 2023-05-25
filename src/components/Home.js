@@ -7,6 +7,7 @@ import { Grid, Typography, Button, Box, keyframes } from '@mui/material';
 // import myteam from '../images/myteam.jpg';
 import { createTheme } from '@mui/material/styles';
 import backgroundsand from '../images/27230.jpg';
+import steve from '../images/steve.jpg';
 import { useEffect, useState } from "react";
 
 
@@ -61,14 +62,18 @@ const Holder = styled(Box)(({ roll }) => ({
 }));
 
 const Title = styled(Typography)(() => ({
-  color: "#f781a3",
+  color: "#f5f5f5",
+  //  "#f781a3",
   fontFamily:  "'Expletus Sans', cursive",
+ 
+             
   textshadow: "1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000",
+  
 
 
-  "&:hover": {
-    animation: `${textShadowPopBr} 0.6s both`
-  }
+  // "&:hover": {
+  //   animation: `${textShadowPopBr} 0.6s both`
+  // }
 }));
 
 
@@ -76,9 +81,9 @@ const Title = styled(Typography)(() => ({
 
 const styles = {
   heroContainer: {
-    height: 500,
+    height: 800,
 
-    backgroundImage: `url(${backgroundsand})`,
+    backgroundImage: `url(${steve})`,
 
     backgroundSize: 'cover',
 
@@ -127,27 +132,28 @@ function Home() {
         style={styles.heroContainer}
 
       >
-        <Grid item xs={12} align="center" sx={{ mt: 40 }} >
+        <Grid item xs={12} align="center" sx={{ mt: 10, mb: 20 }} >
           <Holder roll={roll}  >
             <Title variant="h1">STEVE WAVE</Title>
           </Holder>
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid item xs={12} align="center" sx={{ mt:30, mb:0 }}>
 
-          <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
+          
+         
+       
+          <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp" variant="outlined" color="secondary"  align="center">
+          <Typography sx={{ color: "#A4A9AD" }} variant="h6">
             <div className="glow">
-              The New Single
+              LISTEN TO THE NEW SINGLE
               "Babe Blade"
-              IS NOW ON SPOTIFY
-            </div>
+              
+              </div>
           </Typography>
+          </Button>
         </Grid>
-
-        <Grid item xs={12} align="center" sx={{ mt: 0 }}>
-          <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp" variant="contained" color="primary" sx={{ m: 2 }} xs={12}>I WANT HER</Button>
-        </Grid>
-
+        
       </Grid>
     </div>
 
