@@ -62,14 +62,12 @@ const Holder = styled(Box)(({ roll }) => ({
 }));
 
 const Title = styled(Typography)(() => ({
-  color: "#f5f5f5",
+  color: "#7FFFD4", 
   //  "#f781a3",
   fontFamily:  "'Expletus Sans', cursive",
  
              
-  textshadow: "1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000",
-  
-
+ 
 
   // "&:hover": {
   //   animation: `${textShadowPopBr} 0.6s both`
@@ -155,6 +153,10 @@ function Home() {
         </Grid>
         
       </Grid>
+
+   
+
+
     </div>
 
   );

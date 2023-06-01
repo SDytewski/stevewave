@@ -39,13 +39,15 @@ const theme = createTheme({
 
 export default function Footer() {
     return (
-
-      <Grid item xs={12} align="center" sx={{ mt: 50, mb:10 }} >
+      <div className="noglow">
+      <Box sx={{ bgcolor: '#000000', color: '#FF8886', p: 2 }}>
+      <Grid item xs={12} align="center" sx={{ mt: 20, mb:10 }}  >
     
-      <div> Copyright Steve Wave 2023</div>
+      <div> &#169; 2023 STEVE WAVE</div>
   
   </Grid>
-
+  </Box>
+  </div>
         )  }
 
 

@@ -106,7 +106,7 @@ function NavBar({  setPage }) {
               >
                 {pages.map((page) => (
                   <MenuItem key={page.title}  onClick={() => setPage(page.title)}>
-                    <Typography onClick={handleCloseNavMenu} textAlign="center">{page.title}
+                                        <Typography onClick={handleCloseNavMenu} textAlign="center">{page.title}
                       {/* <Link  style={{textDecoration: "none", color:"black"}} to={`/${page.href}`}>
                     </Link> */}
                     </Typography>
@@ -138,7 +138,7 @@ function NavBar({  setPage }) {
                 <Button
                   key={page.title}
                   onClick={() => setPage(page.title)}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
+                  sx={{ my: 2, color: '#FF8886', display: 'block', fontSize: '22px' }}
                   // href={page.href}
                 >
                   {page.title}
