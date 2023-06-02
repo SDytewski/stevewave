@@ -82,7 +82,7 @@ export const Songs = () => {
        
         <Grid item  xs={12}>      
            
-           <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
+           <Typography sx={{ color: "#A4A9AD", mt: 3 }} variant="h6" align="center">
               <div className="glow">
                SONGS
                 </div>

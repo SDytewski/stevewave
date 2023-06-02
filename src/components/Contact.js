@@ -78,7 +78,7 @@ export const Contact = () => {
        
         <Grid item  xs={12}>      
            
-           <Typography sx={{ color: "#A4A9AD" }} variant="h6" align="center">
+           <Typography sx={{ color: "#A4A9AD", mt: 3 }} variant="h6" align="center">
               <div className="glow">
                CONTACT
                 </div>
@@ -104,7 +104,7 @@ export const Contact = () => {
         <textarea placeholder="Your Message" className="form-control" name="message" rows="10" required></textarea>
     </div>
     <Grid item xs={12} align="center" sx={{mt: 0}}>  
-<Button type="submit" variant="contained" color="primary" sx={{ m: 2 }} xs={12}>Submit Form</Button>
+<Button type="submit" variant="contained" color="primary" sx={{ mt: 20 }} xs={12}>Submit Form</Button>
 </Grid> 
     
    

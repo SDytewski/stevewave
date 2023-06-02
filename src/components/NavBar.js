@@ -178,10 +178,22 @@ function NavBar({  setPage }) {
             </Box> */}
 
 
-            <FontAwesomeIcon icon={faInstagram}  size="xl"  />
+            <a href="https://www.instagram.com/stevewave80/" target="_blank" rel="noreferrer noopener">
+              <FontAwesomeIcon icon={faInstagram}  size="xl"  />
+            </a>
+
+            
+            <a href="https://www.tiktok.com/@stevewave80/" target="_blank" rel="noreferrer noopener">
             <FontAwesomeIcon icon={faTiktok} size="xl"  />
+            </a>
+             <a href="https://open.spotify.com/artist/3FcIgTRVZZwASnXLHJ1JNr" target="_blank" rel="noreferrer noopener">
             <FontAwesomeIcon icon={faSpotify} size="xl" />
+            </a>
+
+            
+            <a href="https://music.apple.com/lk/artist/steve-wave/1642869750" target="_blank" rel="noreferrer noopener">
             <FontAwesomeIcon icon={faApple} size="xl"/>
+            </a>
             
           </Toolbar>
         </createTheme>

@@ -85,6 +85,9 @@ const styles = {
 
     backgroundSize: 'cover',
 
+    className: "stevewave"
+    
+
   },
 
 
@@ -128,6 +131,7 @@ function Home() {
         // alignItems="center"
         // justifyContent="center"
         style={styles.heroContainer}
+        className="stevewave"
 
       >
         <Grid item xs={6} align="center" sx={{ mt: 10, mb: 10, ml: 20 }} >
