@@ -1,7 +1,7 @@
 {
   "name": "stevewave",
   "version": "0.1.0",
-  "homepage": "https://sdytewski.github.io/stevewave",
+  "homepage": "https://www.stevewavemusic.com",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
