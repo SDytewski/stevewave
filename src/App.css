@@ -10,6 +10,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@1,600&display=swap');
 
+@font-face {
+  font-family: "Expletus Sans";
+  src: url('/fonts/Expletus_Sans.ttf');
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+}
+
 .glow {
   font-size: 30px;
   text-align: center;
