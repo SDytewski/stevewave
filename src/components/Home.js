@@ -64,7 +64,7 @@ const Holder = styled(Box)(({ roll }) => ({
 const Title = styled(Typography)(() => ({
   color: "#7FFFD4", 
   //  "#f781a3",
-  fontFamily:  "Expletus Sans",
+  fontFamily:  "Expletus Sans"
  
              
  
