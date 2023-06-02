@@ -40,7 +40,7 @@ const theme = createTheme({
 export default function Footer() {
     return (
       <div className="noglow">
-      <Box sx={{ bgcolor: '#000000', color: '#FF8886', p: 2 }}>
+      <Box sx={{ bgcolor: '#000000', color: '#7FFFD4', p: 2 }}>
       <Grid item xs={12} align="center" sx={{ mt: 20, mb:10 }}  >
     
       <div> &#169; 2023 STEVE WAVE</div>

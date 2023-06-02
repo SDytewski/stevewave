@@ -12,6 +12,11 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { createTheme } from '@mui/material/styles';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faTiktok, faSpotify, faApple } from '@fortawesome/free-brands-svg-icons';
+
+
 // import { Link } from "react-router-dom"
 
 
@@ -135,10 +140,10 @@ function NavBar({  setPage }) {
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
-                <Button
+                <Button 
                   key={page.title}
                   onClick={() => setPage(page.title)}
-                  sx={{ my: 2, color: '#FF8886', display: 'block', fontSize: '22px' }}
+                  sx={{ my: 2, color: '#7FFFD4', display: 'block', fontSize: '22px' }}
                   // href={page.href}
                 >
                   {page.title}
@@ -171,6 +176,13 @@ function NavBar({  setPage }) {
                 ))}
               </Menu>
             </Box> */}
+
+
+            <FontAwesomeIcon icon={faInstagram}  size="xl"  />
+            <FontAwesomeIcon icon={faTiktok} size="xl"  />
+            <FontAwesomeIcon icon={faSpotify} size="xl" />
+            <FontAwesomeIcon icon={faApple} size="xl"/>
+            
           </Toolbar>
         </createTheme>
       </Container>

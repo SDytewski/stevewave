@@ -17,8 +17,15 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-.noglow {
+.slowglow {
   font-size: 30px;
+  text-align: center;
+  color: #000000;
+  animation: glow 10s ease-in-out infinite alternate;
+}
+
+.noglow {
+  font-size: 23px;
   text-align: center;
   color: #fff;
 
@@ -47,3 +54,27 @@ h1 {
 
 
 }
+
+.fa-xl {
+  padding: 6px;
+}
+
+.fa-spotify:hover, .fa-spotify:focus {
+  color: #1db954;
+}
+
+.fa-apple:hover, .fa-apple:focus {
+  color: #555555;
+}
+
+.fa-instagram:hover, .fa-apple:focus {
+  color: #F77737;
+}
+
+
+.fa-tiktok:hover, .fa-apple:focus {
+  color: #00f2ea;
+  
+}
+
+
