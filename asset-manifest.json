@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stevewave/static/css/main.582aff75.css",
-    "main.js": "/stevewave/static/js/main.8048f76a.js",
+    "main.js": "/stevewave/static/js/main.4c519ba4.js",
     "static/js/787.f2007d38.chunk.js": "/stevewave/static/js/787.f2007d38.chunk.js",
     "static/media/steve.jpg": "/stevewave/static/media/steve.2a716bb864294e2b0035.jpg",
     "static/media/27230.jpg": "/stevewave/static/media/27230.4ce08618a2ef3480a949.jpg",
@@ -9,11 +9,11 @@
     "static/media/speaker.jpg": "/stevewave/static/media/speaker.326b432a9d6e46e5c2a5.jpg",
     "index.html": "/stevewave/index.html",
     "main.582aff75.css.map": "/stevewave/static/css/main.582aff75.css.map",
-    "main.8048f76a.js.map": "/stevewave/static/js/main.8048f76a.js.map",
+    "main.4c519ba4.js.map": "/stevewave/static/js/main.4c519ba4.js.map",
     "787.f2007d38.chunk.js.map": "/stevewave/static/js/787.f2007d38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.582aff75.css",
-    "static/js/main.8048f76a.js"
+    "static/js/main.4c519ba4.js"
   ]
 }
