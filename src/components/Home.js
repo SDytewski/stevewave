@@ -64,7 +64,7 @@ const Holder = styled(Box)(({ roll }) => ({
 const Title = styled(Typography)(() => ({
   color: "#7FFFD4", 
   //  "#f781a3",
-  fontFamily:  "'Expletus Sans', cursive",
+  fontFamily:  "Expletus Sans",
  
              
  
@@ -145,7 +145,7 @@ function Home() {
           
          
         <Grid item xs={6} align="center" sx={{ mt: 5, mb: 10, ml: 20 }} >
-          <Button href="https://open.spotify.com/track/2hxhhr8YscoLlOfnd0Fepp" variant="contained" color="secondary" align="center">
+          <Button href="https://open.spotify.com/track/11TOrQWfosyAQVEcTERDb4" variant="contained" color="secondary" align="center">
           <Typography sx={{ color: "#00f2ea" }} variant="h5">
             <div>
               LISTEN TO THE NEW SINGLE
