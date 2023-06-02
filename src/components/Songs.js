@@ -25,7 +25,7 @@ const classes = {
 
 const styles = {
     heroContainer: {
-      height: 500,
+      height: '90vh',
     
       backgroundImage: `url(${backgroundmic})`,
      

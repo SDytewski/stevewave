@@ -79,7 +79,7 @@ const Title = styled(Typography)(() => ({
 
 const styles = {
   heroContainer: {
-    height: 800,
+    height: '90vh',
 
     backgroundImage: `url(${steve})`,
 
