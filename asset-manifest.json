@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stevewave/static/css/main.01e42df2.css",
+    "main.css": "/stevewave/static/css/main.18c7ec97.css",
     "main.js": "/stevewave/static/js/main.15d2df2c.js",
     "static/js/787.f2007d38.chunk.js": "/stevewave/static/js/787.f2007d38.chunk.js",
     "static/media/steve.jpg": "/stevewave/static/media/steve.2a716bb864294e2b0035.jpg",
@@ -8,12 +8,12 @@
     "static/media/microphone.jpg": "/stevewave/static/media/microphone.372dd7643d90ceb1e222.jpg",
     "static/media/speaker.jpg": "/stevewave/static/media/speaker.326b432a9d6e46e5c2a5.jpg",
     "index.html": "/stevewave/index.html",
-    "main.01e42df2.css.map": "/stevewave/static/css/main.01e42df2.css.map",
+    "main.18c7ec97.css.map": "/stevewave/static/css/main.18c7ec97.css.map",
     "main.15d2df2c.js.map": "/stevewave/static/js/main.15d2df2c.js.map",
     "787.f2007d38.chunk.js.map": "/stevewave/static/js/787.f2007d38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01e42df2.css",
+    "static/css/main.18c7ec97.css",
     "static/js/main.15d2df2c.js"
   ]
 }
