@@ -64,12 +64,12 @@ const Holder = styled(Box)(({ roll }) => ({
 const Title = styled(Typography)(() => ({
   color: "#7FFFD4", 
   //  "#f781a3",
-  fontFamily:  "Expletus Sans"
+  fontFamily:  "Expletus Sans",
+  fontWeight: 900,
+  fontStyle: 'italic'
  
              
- 
-
-  // "&:hover": {
+   // "&:hover": {
   //   animation: `${textShadowPopBr} 0.6s both`
   // }
 }));
