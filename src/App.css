@@ -10,14 +10,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@1,600&display=swap');
 
-@font-face {
-  font-family: "Expletus Sans";
-  src: url('/fonts/Expletus_Sans.ttf');
-  font-style: italic;
-  font-weight: normal;
-  font-display: swap;
-}
-
 .glow {
   font-size: 30px;
   text-align: center;
@@ -58,7 +50,7 @@ h1 {
   /* text-shadow: 0px 10px 10px #000000; */
   text-shadow: 0px 20px 20px #e93663, 0px 0px 20px #fff;
   font-weight: 900;
-  font-family: "Expletus Sans", cursive;
+  font-family: "Expletus Sans",
  
 
 
