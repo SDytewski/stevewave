@@ -13,7 +13,7 @@
 .glow {
   font-size: 30px;
   text-align: center;
-  color: #000000;
+  color: #f3f3f3;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
@@ -89,6 +89,9 @@ textarea {
   width: 340px;
 }
 
+h5 {
+  font-weight: 900;
+}
 
 @media screen and (max-width: 400px) {
 
