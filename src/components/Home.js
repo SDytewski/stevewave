@@ -134,7 +134,7 @@ function Home() {
         className="stevewave"
 
       >
-        <Grid item xs={6} align="center" sx={{ mt: 10, mb: 0, ml: 20 }} >
+        <Grid item xs={6} s={6} md= {6} lg={6} align="center" sx={{ mt: 10, mb: 0, ml: 10 }} >
           <Holder roll={roll}>
             <Title variant="h1">STEVE WAVE</Title>
           </Holder>
@@ -144,13 +144,13 @@ function Home() {
 
           
          
-        <Grid item xs={6} align="center" sx={{ mt: 5, mb: 10, ml: 20 }} >
+        <Grid item xs={8} s={6} md={6} lg={6} align="center" sx={{ mt: 5, mb: 10}} className="single" >
           <Button href="https://open.spotify.com/track/11TOrQWfosyAQVEcTERDb4" variant="contained" color="secondary" align="center">
-          <Typography sx={{ color: "#00f2ea" }} variant="h4">
-            <div>
+          <Typography sx={{ color: "#00f2ea" }} variant="h5">
+            
               LISTEN TO THE NEW SINGLE
               <div className="glow">"Babe Blade"</div>
-            </div>
+            
           </Typography>
           </Button>
         </Grid>
