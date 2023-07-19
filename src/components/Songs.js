@@ -3,12 +3,15 @@ import '../App.css';
 import styled from "@mui/material/styles/styled";
 import { createMuiTheme, ThemeProvider } from "@mui/material/styles";
 
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+
 import { Grid, Typography, Button, Box, keyframes } from '@mui/material';
 // import myteam from '../images/myteam.jpg';
 import { createTheme } from '@mui/material/styles';
 
 import { useEffect, useState } from "react";
-
 
 
 import backgroundmic from '../images/microphone.jpg';
@@ -18,6 +21,9 @@ const classes = {
       flexGrow: 1
     },
 }
+
+
+
 
 
 
@@ -49,20 +55,49 @@ const styles = {
          
 });
 
+const CLIENT_ID = "78a30fe647724ab897180931bb58e282";
+const CLIENT_SECRET = "33b2264d59f042ad84024042692599cf"
 
 export const Songs = () => {
 //function expression is when a function is stored in a variable
 
     const [roll, setRoll] = useState(false);
+    const  [accessToken, setAccessToken] = useState("");
 
-    useEffect(() => {
-      setTimeout(() => {
-        // animation
-        setRoll(true);
-      }, 500);
-    }, []);
+    // useEffect(() => {
+    //   setTimeout(() => {
+    //     // animation
+    //     setRoll(true);
+    //   }, 500);
+    // }, []);
+ 
+    useEffect(() =>  {
 
-
+      const authParameters = {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded" 
+        },
+        body: 
+          "grant_type=client_credentials&client_id=" + CLIENT_ID + "&client_secret=" + CLIENT_SECRET
+    
+      }
+        fetch('https://accounts.spotify.com/api/token', authParameters)
+          .then(result => result.json())
+          .then(data => {
+            setAccessToken(data.access_token)
+            return data
+          })
+          .then(response => fetch("https://api.spotify.com/v1/artists/3FcIgTRVZZwASnXLHJ1JNr", {
+            method: 'GET',
+            headers: { 
+              "Authorization" : `Bearer ${response.access_token}`
+            }
+          }))    
+          .then(res => res.json())
+          .then(data1 => console.log(data1))      
+    
+    }, [])
 
     return (
         
@@ -86,7 +121,27 @@ export const Songs = () => {
               <div className="glow">
                SONGS
                 </div>
-            </Typography>        
+            </Typography>  
+            <Card sx={{ minWidth: 275 }}>
+      <CardContent>
+        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          Spotify Data
+        </Typography>
+        <Typography variant="h5" component="div">
+          
+        </Typography>
+        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          Picture
+        </Typography>
+        <Typography variant="body2">
+         something
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
+      </CardContent>
+      
+    </Card>
+                  
         </Grid>  
             <Grid item xs={12} align="center">
             <iframe src="https://open.spotify.com/embed/album/2IoHLWW6TmUp1QoJxyr7Gw?utm_source=generator"   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
