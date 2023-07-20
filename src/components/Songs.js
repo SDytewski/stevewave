@@ -57,7 +57,7 @@ export const Songs = () => {
   //function expression is when a function is stored in a variable
 
   // const [roll, setRoll] = useState(false);
-  const [spotify, setSpotify] = useState([]);
+  const [spotify, setSpotify] = useState("");
   const [accessToken, setAccessToken] = useState("");
 
   // useEffect(() => {
