@@ -107,43 +107,21 @@ export const Songs = () => {
         // alignItems="center"
         // justifyContent="center"
         style={styles.heroContainer}
+        alignItems="center"
+        justifyContent="center"
 
       >
-
-
         <Grid item xs={12}>
 
-          <Typography sx={{ color: "#A4A9AD", mt: 4, pt: 10 }} variant="h6" align="center">
+          <Typography sx={{ color: "#A4A9AD", mt: 4, pt: 5, mb: 10 }} variant="h6" align="center">
             <div className="glow">
               SONGS
             </div>
           </Typography>
-          <Box  display="flex"
-      justifyContent="center" sx={{ width: 1/4 }} > 
-          <Card sx={{ minWidth: 275 }}>
 
-            <CardContent style={{ backgroundColor: "grey" }}>
-              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                Spotify Data
-              </Typography>
-              <Typography variant="h5" component="div">
-
-              </Typography>
-              <div>
-                <ul>Name: {spotify.name}</ul>
-                <ul>Followers: {spotify.followers.total}</ul>
-                <ul>Link: {spotify.href}</ul>
-
-
-
-
-              </div>
-            
-            </CardContent>
-
-          </Card>
-          </Box>          
         </Grid>
+
+
         <Grid item xs={12} align="center">
           <iframe src="https://open.spotify.com/embed/album/2IoHLWW6TmUp1QoJxyr7Gw?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
@@ -159,6 +137,27 @@ export const Songs = () => {
         <Grid item xs={12} align="center">
           <iframe src="https://open.spotify.com/embed/track/2hxhhr8YscoLlOfnd0Fepp?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </Grid>
+
+        <Grid item xs={3} align="center" sx={{ mt: 2, mb: 0 }}>
+          <Card sx={{ minWidth: 275 }}>
+
+            <CardContent style={{ backgroundColor: "#000000" }}>
+              <Typography sx={{ fontSize: 18 }} color="#7FFFD4">Spotify Data</Typography>
+
+              <Typography sx={{ fontSize: 13 }} color="#7FFFD4">
+                <Box>Name: {spotify.name}</Box>
+                <Box>Followers: {spotify.followers.total}</Box>
+                <Box>Popularity: {spotify.popularity}</Box>
+                <Box pt={3}><img id="spotify-profile" src={spotify.images[0].url} /></Box>
+
+             </Typography>
+
+            </CardContent>
+
+          </Card>
+        </Grid>
+
+
       </Grid>
     </div>
 
