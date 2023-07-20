@@ -28,7 +28,7 @@ const styles = {
       backgroundImage: `url(${backgroundmic2})`,
      
       backgroundSize: 'cover',
-      height: '90vh',
+      height: '700px',
     
     },
 
@@ -52,14 +52,14 @@ const styles = {
 export const Contact = () => {
 
 
-    const [roll, setRoll] = useState(false);
+    // const [roll, setRoll] = useState(false);
 
-    useEffect(() => {
-      setTimeout(() => {
-        // animation
-        setRoll(true);
-      }, 500);
-    }, []);
+    // useEffect(() => {
+    //   setTimeout(() => {
+    //     // animation
+    //     setRoll(true);
+    //   }, 500);
+    // }, []);
 
 
 
@@ -79,8 +79,8 @@ export const Contact = () => {
        
         <Grid item  xs={12}>      
            
-           <Typography sx={{ color: "#A4A9AD", mt: 4 }} variant="h6" align="center">
-              <div className="glow">
+           <Typography sx={{ color: "#A4A9AD", mt: 28, mb:0 }} variant="h6" align="center">
+              <div className="glow" id="contact-header">
                CONTACT
                 </div>
             </Typography>        

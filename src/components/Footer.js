@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 
 import { Grid } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 
 
@@ -15,7 +15,7 @@ import  { useState, useEffect } from 'react';
 const theme = createTheme({
     palette: {
         primary: {
-            main:  "#ff8f00" 
+            main: "#ff8f00"
         },
         secondary: {
             main: "#ffcc80"
@@ -39,16 +39,23 @@ const theme = createTheme({
 
 export default function Footer() {
     return (
-      <div className="noglow">
-      <Box sx={{ bgcolor: '#000000', color: '#7FFFD4', p: 2 }}>
-      <Grid item xs={12} align="center" sx={{ mt: 20, mb:10 }}  >
-    
-      <div> &#169; 2023 STEVE WAVE</div>
-  
-  </Grid>
-  </Box>
-  </div>
-        )  }
+        <div className="page-container">
+        <div className="content-wrap">
+        <div className="noglow">
+             <Grid item xs={12}>
+            <Box sx={{ bgcolor: '#000000', color: '#7FFFD4', p: 2 }}>
+                <Grid item xs={12} align="center" sx={{ mt: 20, mb: 10 }}  >
+
+                    <div> &#169; 2023 STEVE WAVE</div>
+
+                </Grid>
+            </Box>
+            </Grid>
+        </div>
+        </div>
+        </div>
+    )
+}
 
 
 // function Footer() {
@@ -62,8 +69,8 @@ export default function Footer() {
 
 //     const obj = {
 //         name: "Vinnie",
-//         id: 1, 
-//         food: 'pizza', 
+//         id: 1,
+//         food: 'pizza',
 //         dob: '10/1/84'
 //     }
 
