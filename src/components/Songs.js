@@ -113,7 +113,7 @@ export const Songs = () => {
       >
         <Grid item xs={12}>
 
-          <Typography sx={{ color: "#A4A9AD", mt: 4, pt: 5, mb: 10 }} variant="h6" align="center">
+          <Typography sx={{ color: "#A4A9AD", mt: 2, mb: 10 }} variant="h6" align="center">
             <div className="glow">
               SONGS
             </div>
@@ -139,12 +139,12 @@ export const Songs = () => {
         </Grid>
 
         <Grid item xs={3} align="center" sx={{ mt: 2, mb: 0 }}>
-          <Card sx={{ minWidth: 275 }}>
+          <Card sx={{ minWidth: 140 }}>
 
-            <CardContent style={{ backgroundColor: "#000000" }}>
-              <Typography sx={{ fontSize: 18 }} color="#7FFFD4">Spotify Data</Typography>
+            <CardContent style={{ backgroundColor: "#FF8886" }}>
+              <Typography sx={{ fontSize: 18 }} color="">Spotify Data</Typography>
 
-              <Typography sx={{ fontSize: 13 }} color="#7FFFD4">
+              <Typography sx={{ fontSize: 13 }} color="#0000000">
                 <Box>Name: {spotify.name}</Box>
                  {/* <Box>Followers: {spotify.followers.total}</Box> */}
                 <Box>Popularity: {spotify.popularity}</Box> 
