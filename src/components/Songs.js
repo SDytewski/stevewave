@@ -57,7 +57,7 @@ export const Songs = () => {
   //function expression is when a function is stored in a variable
 
   // const [roll, setRoll] = useState(false);
-  const [spotify, setSpotify] = useState("");
+  const [spotify, setSpotify] = useState([]);
   const [accessToken, setAccessToken] = useState("");
 
   // useEffect(() => {
@@ -91,7 +91,7 @@ export const Songs = () => {
         }
       }))
       .then(res => res.json())
-      .then(data1 => { setSpotify(data1); console.log(data1) })
+      .then(data1 => { setSpotify(data1); console.log(data1)})
 
   }, [])
 
@@ -146,9 +146,9 @@ export const Songs = () => {
 
               <Typography sx={{ fontSize: 13 }} color="#7FFFD4">
                 <Box>Name: {spotify.name}</Box>
-                <Box>Followers: {spotify.followers.total}</Box>
-                <Box>Popularity: {spotify.popularity}</Box>
-                <Box pt={3}><img id="spotify-profile" src={spotify.images[0].url} /></Box>
+                 {/* <Box>Followers: {spotify.followers.total}</Box> */}
+                <Box>Popularity: {spotify.popularity}</Box> 
+                {/* <Box pt={3}><img id="spotify-profile" src={spotify.images[0].url} /></Box>  */}
 
              </Typography>
 
