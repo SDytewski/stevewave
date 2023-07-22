@@ -91,8 +91,8 @@ export const Songs = () => {
         }
       }))
       .then(res => res.json())
-      .then(data1 => { setSpotify(data1)})
-     
+      .then(data1 => { setSpotify(data1) })
+
 
   }, [])
 
@@ -100,62 +100,61 @@ export const Songs = () => {
 
 
 
-    <div style={classes.root}>
+    // <div style={classes.root}>
+    <Box sx={{ flexGrow: 1 }}>
       <Grid
         container
         spacing={0}
         // direction="column"
-        // alignItems="center"
-        // justifyContent="center"
-        style={styles.heroContainer}
         alignItems="center"
         justifyContent="center"
+        style={styles.heroContainer}
+      // alignItems="center"
+      // justifyContent="center"
 
       >
-        <Grid item xs={12}>
-
-          <Typography sx={{ color: "#A4A9AD", mb: 20, mt: 29}} variant="h6" align="center">
+        <Grid item xs={12} >
+          <Typography sx={{ color: "#A4A9AD", mb: 20, mt: 29 }} variant="h6">
             <div className="glow">
               SONGS
             </div>
+
           </Typography>
-
         </Grid>
 
+        <Grid item xs={4} lg={3} sx={{ pb:9 }} align="center">
 
-        <Grid item xs={12} align="center">
-        <div>  <iframe src="https://open.spotify.com/embed/album/2IoHLWW6TmUp1QoJxyr7Gw?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+          
+            <div style={{ backgroundColor: "#FF8886" }}>
+              <Typography sx={{ fontSize: 17, pt:5 }} color="">Spotify Data</Typography>
 
-          {/* <iframe src="https://bandcamp.com/EmbeddedPlayer/track=3580342141/size=small/bgcol=ffffff/linkcol=f171a2/transparent=true/" seamless><a href="https://stevewave.bandcamp.com/track/babe-blade">Babe Blade by Steve Wave</a></iframe> */}
-       
-
-         <div> <iframe src="https://open.spotify.com/embed/album/2e0Pcn6CSDmN7ss0YamLX7?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-
-          <div><iframe src="https://open.spotify.com/embed/track/2hxhhr8YscoLlOfnd0Fepp?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
-        </Grid>
-
-        <Grid item xs={6} md={2} lg={2} align="center" sx={{ mt: 2 }}>
-          <Card >
-
-            <CardContent style={{ backgroundColor: "#FF8886" }}>
-              <Typography sx={{ fontSize: 18 }} color="">Spotify Data</Typography>
-
-              <Typography sx={{ fontSize: 13 }} color="#0000000">
-                <Box>Name: {spotify.name}</Box>
-               { spotify ? <Box> Followers {spotify.followers.total} </Box> : <p>Loading </p> }
-                <Box>Popularity: {spotify.popularity}</Box> 
+              <Typography sx={{ fontSize: 13, pb:5 }} color="#0000000">
+                {/* <Box>Name: {spotify.name}</Box> */}
+                {spotify ? <Box> Followers {spotify.followers.total} </Box> : <p>Loading </p>}
+                <Box>Popularity: {spotify.popularity}</Box>
                 {/* <Box pt={3}><img id="spotify-profile" src={spotify.images[0].url} /></Box>  */}
 
-             </Typography>
+              </Typography>
 
-            </CardContent>
+            </div>
+          </Grid>
 
-          </Card>
+         <Grid item xs={12}   sx={{ mt:17 }} align="center">
+            <div>  <iframe src="https://open.spotify.com/embed/album/2IoHLWW6TmUp1QoJxyr7Gw?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+
+            {/* <iframe src="https://bandcamp.com/EmbeddedPlayer/track=3580342141/size=small/bgcol=ffffff/linkcol=f171a2/transparent=true/" seamless><a href="https://stevewave.bandcamp.com/track/babe-blade">Babe Blade by Steve Wave</a></iframe> */}
+
+
+            <div> <iframe src="https://open.spotify.com/embed/album/2e0Pcn6CSDmN7ss0YamLX7?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+
+            <div><iframe src="https://open.spotify.com/embed/track/2hxhhr8YscoLlOfnd0Fepp?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+          </Grid>
+
+
+
         </Grid>
-
-
-      </Grid>
-    </div>
+    </Box>
+ 
 
   );
 };
