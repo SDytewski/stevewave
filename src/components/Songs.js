@@ -129,8 +129,8 @@ export const Songs = () => {
               <Typography sx={{ fontSize: 17, pt:5 }} color="">Spotify Data</Typography>
 
               <Typography sx={{ fontSize: 13, pb:5 }} color="#0000000">
-                {/* <Box>Name: {spotify.name}</Box> */}
-                {spotify ? <Box> Followers {spotify.followers.total} </Box> : <p>Loading </p>}
+                <Box>{spotify.name}</Box>
+                {spotify ? <Box> Followers: {spotify.followers.total} </Box> : <p>Loading </p>}
                 <Box>Popularity: {spotify.popularity}</Box>
                 {/* <Box pt={3}><img id="spotify-profile" src={spotify.images[0].url} /></Box>  */}
 
