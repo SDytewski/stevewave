@@ -145,11 +145,11 @@ function Home() {
           
          
         <Grid item xs={8} s={6} md={6} lg={6} align="center" sx={{ mt: 5, mb: 10}} className="single" >
-          <Button href="https://open.spotify.com/track/11TOrQWfosyAQVEcTERDb4" variant="contained" color="secondary" align="center">
+          <Button href="https://open.spotify.com/track/0KMMqXNgNxWXRn0Titw5Cz?si=0a62292a126740d1" variant="contained" color="secondary" align="center">
           <Typography sx={{ color: "#00f2ea" }} variant="h5">
             
               LISTEN TO THE NEW SINGLE
-              <div className="glow">"Babe Blade"</div>
+              <div className="glow">"Rocket Girl"</div>
             
           </Typography>
           </Button>
